@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SongMate</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">SongMate</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="summary_songmate.html">Summary</a></li>
+						<li><a href="specifications.html"  class="active">Specifications</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Specifications</h1>
+
+							<!-- Text -->
+								<section>
+									<h2>API Usage</h2>
+									<hr />
+									<p><strong>Spotify API</strong></p>
+									<p>Spotipy is a python library for the Spotify Web API. Spotipy provides us with a simple and easy- to- use interface to the Spotify Web API. It handles authentication with Spotify and provides us a set of functions to access the API endpoints and retrieve data. In this project we first created a spotify developer account followed by creating a new Spotify App to get our Client ID and Client Secret. We used these credentials to set up authentication credentials for using Spotipy functions. We first use this function’s library of search which returns a track corresponding to the song name input. We also use the artist function to get the artist name for that particular track. Then we finally use the recommendations function of this library to get recommendations based on the input list of genres (genres they both like) and input list of artists (artists they both listen to).</p>
+									<ul class="actions">
+										<li><a href="https://spotipy.readthedocs.io/en/2.24.0/" class="button">Read more</a></li>
+									</ul>
+									<hr />
+									<h2>Libraries Used</h2>
+									<hr />
+                                    <p><strong>1. Tkinter</strong>:</p>
+                                    <p>Tkinter is one of the few GUI frameworks that are built-in the standard Python library. This makes it a good choice for a Python-based project since it integrates well with other Python libraries and frameworks. As opposed to our initial decision to use Flask and JavaScript to create a webpage as our GUI, TKinter proved to be much more efficient and uniform in its implementation. It was easier for all the team members to get acquainted with since it was Python-based, and it was very convenient to be able to integrate frontend and backend. As described above, we used the various data types in TKinter like Frames, Apps, Label, Button, Entry and RadioButton to optimise our GUI.</p>
+                                    <ul class="actions">
+										<li><a href="https://docs.python.org/3/library/tkinter.html" class="button">Read more</a></li>
+									</ul>
+                                    <p><strong>2. Pandas</strong>:</p>
+                                    <p>Pandas is an open source library which provides fast, powerful, flexible and easy-to-use data analysis and manipulation tools. We have used this library in the gettrackmetadata function to return a dataframe containing information about each song, including the genres associated with the song. This information is then used by the getsimilargenres function to extract the genres associated with the songs listened to by each user and find the intersection of these sets, which represents the genres that both users have in common. Representing our data as data frames is useful because it allows us to use Pandas capabilities such as the‘loc’ function. This function provides a clear and explicit way to select rows and columns of a DataFrame or Series using label-based indexing, making it easy to access and filter rows based on ‘songname’ for example.</p>
+									<ul class="actions">
+										<li><a href="https://pandas.pydata.org/docs/user_guide/index.html" class="button">Read more</a></li>
+									</ul>
+                                    <hr />
+                                    <h2>Features</h2>
+									<hr />
+									<p><strong>1. User Registration and Login</strong>: The application allows users to create accounts to save their song preferences and ratings securely. For users who prefer not to register, a guest access option is available, enabling them to explore the application without the need for account creation.</p>
+									<p><strong>2. Song Selection</strong>: Users can select five songs from a predefined directory featuring Spotify’s Top 50 Songs of 2023. Each song can be rated on a scale of 1 to 5, allowing for a nuanced assessment of musical preferences and tastes.</p>
+									<p><strong>3. Compatibility Scoring</strong>: The application calculates a compatibility score based on the ratings users provide for their selected songs. It displays the percentage similarity between users, offering insights into how closely their music tastes align.</p>
+                                    <p><strong>4. Personalized Recommendations</strong>: Based on common genres and artists shared between users, the application provides personalized song recommendations. By leveraging data from the Spotify API, it suggests songs that resonate with users' preferences, enhancing their music discovery experience.</p>
+                                    <p><strong>5. Graphical User Interface (GUI)</strong>: Built using Tkinter, the GUI is designed for an intuitive and interactive user experience. Key features include labels for instructions and results, entry fields for user names and song ratings, navigation buttons, and radio buttons for selecting compatibility scoring options.</p>
+									<hr />
+									<ul class="actions">
+										<li><a href="https://github.com/FalakR/SongMate-Music-Compatibility-Application" class="button">Github Repository</a></li>
+									</ul>
+								</section>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Falak Rastogi 2024</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
